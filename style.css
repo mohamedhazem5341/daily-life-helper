@@ -17,7 +17,14 @@ body {
     color: #111;
     line-height: 1.45;
 }
-
+.creator{
+    text-decoration: none;
+    color: var(--muted);
+    transition: all 0.3s ease;
+}
+.creator:hover{
+    letter-spacing: 2px;
+}
 .container {
     max-width: 960px;
     margin: 0 auto;
