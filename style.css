@@ -1,0 +1,173 @@
+/* style.css - shared styles for all pages */
+:root {
+    --accent: #0077cc;
+    --bg: #f8f9fb;
+    --card: #ffffff;
+    --muted: #666;
+}
+
+* {
+    box-sizing: border-box
+}
+
+body {
+    margin: 0;
+    font-family: Inter, system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial;
+    background: var(--bg);
+    color: #111;
+    line-height: 1.45;
+}
+
+.container {
+    max-width: 960px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+.site-header {
+    background: linear-gradient(90deg, var(--accent), #005fa3);
+    color: white;
+    padding: 28px 0;
+    text-align: center;
+}
+
+.header-inner h1 {
+    margin: 0;
+    font-size: 28px
+}
+
+.header-inner .tag {
+    margin-top: 6px;
+    opacity: .95
+}
+
+.card-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 16px;
+    margin-top: 20px;
+}
+
+.card {
+    background: var(--card);
+    padding: 22px;
+    border-radius: 10px;
+    text-decoration: none;
+    color: #111;
+    box-shadow: 0 6px 18px rgba(13, 38, 59, 0.06);
+    text-align: center;
+    font-weight: 600;
+    transition: transform .15s ease, box-shadow .15s ease;
+}
+
+.card:hover {
+    transform: translateY(-6px);
+    box-shadow: 0 18px 30px rgba(13, 38, 59, 0.08);
+}
+
+.how {
+    margin-top: 28px;
+    background: var(--card);
+    padding: 18px;
+    border-radius: 10px;
+    box-shadow: 0 6px 18px rgba(13, 38, 59, 0.04);
+}
+
+.container input,
+.container select,
+.container button,
+.container textarea {
+    font-family: inherit;
+    font-size: 15px;
+}
+
+.container label {
+    font-weight: 600;
+    display: block;
+    margin-bottom: 6px;
+    color: var(--muted)
+}
+
+.container .small {
+    font-size: 13px;
+    color: var(--muted)
+}
+
+.button {
+    background: var(--accent);
+    color: white;
+    padding: 10px 12px;
+    border-radius: 6px;
+    border: none;
+    cursor: pointer;
+    display: inline-block;
+}
+
+.button.secondary {
+    background: #e6e6e6;
+    color: #111;
+}
+
+.container {
+    background: none;
+}
+
+/* page container card for tools */
+.page-card {
+    max-width: 600px;
+    margin: 28px auto;
+    background: var(--card);
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 6px 18px rgba(13, 38, 59, 0.06);
+}
+
+/* forms and lists */
+input[type="number"],
+input[type="text"],
+input[type="time"],
+select,
+textarea {
+    width: 100%;
+    padding: 10px;
+    border-radius: 6px;
+    border: 1px solid #e6e7ea;
+    margin-bottom: 12px;
+}
+
+button {
+    padding: 10px 12px;
+    border-radius: 6px;
+    border: none;
+    cursor: pointer;
+}
+
+ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+#task-list li {
+    padding: 10px;
+    border-bottom: 1px dashed #efefef;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 10px;
+}
+
+#task-list li:last-child {
+    border-bottom: none;
+}
+
+/* small screens tweaks */
+@media (max-width:520px) {
+    .header-inner h1 {
+        font-size: 20px
+    }
+
+    .card {
+        padding: 16px
+    }
+}

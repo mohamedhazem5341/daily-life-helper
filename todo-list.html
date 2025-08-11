@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>To-Do List — Daily Life Helper</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header class="site-header"><div class="container"><h1>To-Do List</h1></div></header>
+
+  <main class="container">
+    <div class="page-card">
+      <label for="task-input">New Task</label>
+      <input id="task-input" type="text" placeholder="Enter a task...">
+      <button id="add-btn" class="button">Add Task</button>
+      <ul id="task-list" style="margin-top:12px;"></ul>
+      <button id="clear-all-btn" class="button secondary" style="margin-top:12px;">Clear All</button>
+    </div>
+  </main>
+
+  <footer class="site-footer"><div class="container"><p>© 2025 Daily Life Helper</p></div></footer>
+
+  <script src="tools/todo.js"></script>
+</body>
+</html>

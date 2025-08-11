@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>Sleep Time Calculator — Daily Life Helper</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header class="site-header"><div class="container"><h1>Sleep Time Calculator</h1></div></header>
+
+  <main class="container">
+    <div class="page-card">
+      <label for="wakeTime">I want to wake up at</label>
+      <input id="wakeTime" type="time">
+
+      <button id="sleep-calc" class="button">Calculate Sleep Times</button>
+      <button id="sleep-clear" class="button secondary">Clear</button>
+
+      <div id="sleep-result" style="margin-top:12px;font-weight:700;"></div>
+      <p class="small" style="margin-top:8px;">We assume ~15 minutes to fall asleep + 90-minute sleep cycles. Pick times so you wake between cycles.</p>
+    </div>
+  </main>
+
+  <footer class="site-footer"><div class="container"><p>© 2025 Daily Life Helper</p></div></footer>
+
+  <script src="tools/sleep.js"></script>
+</body>
+</html>

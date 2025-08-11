@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>Unit Converter — Daily Life Helper</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header class="site-header"><div class="container"><h1>Unit Converter</h1></div></header>
+
+  <main class="container">
+    <div class="page-card">
+      <p class="small">Convert length, weight and temperature. Select matching unit types.</p>
+
+      <label for="value">Value</label>
+      <input id="value" type="number" placeholder="Enter number">
+
+      <label for="from">From</label>
+      <select id="from">
+        <optgroup label="Length">
+          <option value="m">Meter (m)</option>
+          <option value="km">Kilometer (km)</option>
+          <option value="cm">Centimeter (cm)</option>
+          <option value="mm">Millimeter (mm)</option>
+        </optgroup>
+        <optgroup label="Weight">
+          <option value="kg">Kilogram (kg)</option>
+          <option value="g">Gram (g)</option>
+          <option value="lb">Pound (lb)</option>
+          <option value="oz">Ounce (oz)</option>
+        </optgroup>
+        <optgroup label="Temperature">
+          <option value="c">Celsius (°C)</option>
+          <option value="f">Fahrenheit (°F)</option>
+        </optgroup>
+      </select>
+
+      <label for="to">To</label>
+      <select id="to">
+        <!-- same options -->
+        <optgroup label="Length">
+          <option value="m">Meter (m)</option>
+          <option value="km">Kilometer (km)</option>
+          <option value="cm">Centimeter (cm)</option>
+          <option value="mm">Millimeter (mm)</option>
+        </optgroup>
+        <optgroup label="Weight">
+          <option value="kg">Kilogram (kg)</option>
+          <option value="g">Gram (g)</option>
+          <option value="lb">Pound (lb)</option>
+          <option value="oz">Ounce (oz)</option>
+        </optgroup>
+        <optgroup label="Temperature">
+          <option value="c">Celsius (°C)</option>
+          <option value="f">Fahrenheit (°F)</option>
+        </optgroup>
+      </select>
+
+      <button class="button" id="convert-btn">Convert</button>
+      <button class="button secondary" id="convert-clear">Clear</button>
+
+      <p id="convert-result" style="font-weight:700;margin-top:14px;"></p>
+    </div>
+  </main>
+
+  <footer class="site-footer"><div class="container"><p>© 2025 Daily Life Helper</p></div></footer>
+
+  <script src="tools/unit.js"></script>
+</body>
+</html>
